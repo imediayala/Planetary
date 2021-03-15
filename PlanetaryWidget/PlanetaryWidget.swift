@@ -65,17 +65,19 @@ struct PlanetaryWidgetEntryView : View {
     }
     
     var body: some View {
-        if !entry.shouldShowText {
-            showImage()
-        }else{
-            switch widgetFamily {
-            case .systemSmall:
-                ZStack {
-                    Image(uiImage: entry.image)
-                        .resizable()
-                        .overlay(CaptionOverlaySmall(entry: entry), alignment: .bottom)
+        switch widgetFamily {
+        case .systemSmall:
+            ZStack {
+                Image(uiImage: entry.image)
+                    .resizable()
+                if entry.shouldShowText {
+                    CaptionOverlaySmall(entry: entry)
                 }
-            case .systemMedium:
+            }
+        case .systemMedium:
+            if !entry.shouldShowText{
+                showImage()
+            } else {
                 ZStack {
                     LinearGradient(gradient: Gradient(colors: [.gray, .black, .gray]), startPoint: .top, endPoint: .bottom)
                     HStack {
@@ -88,17 +90,18 @@ struct PlanetaryWidgetEntryView : View {
                     }
                     .padding(.all)
                 }
-            case .systemLarge:
-                ZStack {
-                    Image(uiImage: entry.image)
-                        .resizable()
-                        .overlay(CaptionOverlayLarge(entry: entry), alignment: .top)
-                }
-            @unknown default: showImage()
             }
+        case .systemLarge:
+            ZStack {
+                Image(uiImage: entry.image)
+                    .resizable()
+                if entry.shouldShowText {
+                    CaptionOverlayLarge(entry: entry)
+                }
+            }
+        @unknown default: showImage()
         }
     }
-    
 }
 
 struct CaptionOverlaySmall: View {
@@ -106,14 +109,15 @@ struct CaptionOverlaySmall: View {
     
     var body: some View {
         VStack {
+            Spacer()
             Text(entry.text)
                 .font(.caption)
                 .bold()
                 .foregroundColor(.white)
                 .padding(6)
                 .opacity(0.8)
+                .background(ContainerRelativeShape().fill(Color.gray.opacity(0.5)))
         }
-        .background(ContainerRelativeShape().fill(Color.gray.opacity(0.5)))
         .padding(6)
     }
 }
@@ -176,8 +180,8 @@ struct PlanetaryWidget: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: PlanetaryTimelineProvider()) { entry in
             PlanetaryWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Astronomy picture of the day")
-        .description("This is a widget that shows the astronomy picture of the day.")
+        .configurationDisplayName("A Random Astronomy Image")
+        .description("This Widget will impress every time you see it with random astronomy images, it also lets you read whats behind the image")
     }
 }
 
