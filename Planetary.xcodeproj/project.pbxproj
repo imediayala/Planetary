@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4C2966E25FE0EF1004A624C /* PlanetaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2966D25FE0EF1004A624C /* PlanetaryApp.swift */; };
+		C4C2967025FE0EF1004A624C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2966F25FE0EF1004A624C /* ContentView.swift */; };
+		C4C2967225FE0EF2004A624C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C2967125FE0EF2004A624C /* Assets.xcassets */; };
+		C4C2967525FE0EF2004A624C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C2967425FE0EF2004A624C /* Preview Assets.xcassets */; };
+		C4C2968425FE0F02004A624C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2968325FE0F02004A624C /* WidgetKit.framework */; };
+		C4C2968625FE0F02004A624C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2968525FE0F02004A624C /* SwiftUI.framework */; };
+		C4C2968925FE0F02004A624C /* PlanetaryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2968825FE0F02004A624C /* PlanetaryWidget.swift */; };
+		C4C2968C25FE0F03004A624C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C2968B25FE0F03004A624C /* Assets.xcassets */; };
+		C4C2968E25FE0F03004A624C /* PlanetaryWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C4C2968A25FE0F02004A624C /* PlanetaryWidget.intentdefinition */; };
+		C4C2968F25FE0F03004A624C /* PlanetaryWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C4C2968A25FE0F02004A624C /* PlanetaryWidget.intentdefinition */; };
+		C4C2969225FE0F03004A624C /* PlanetaryWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C4C2968125FE0F02004A624C /* PlanetaryWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4C2969A25FE0F6A004A624C /* PlanetaryWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C2969925FE0F6A004A624C /* PlanetaryWidgetProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4C2969025FE0F03004A624C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4C2966225FE0EF1004A624C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4C2968025FE0F02004A624C;
+			remoteInfo = PlanetaryWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4C2969625FE0F03004A624C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C4C2969225FE0F03004A624C /* PlanetaryWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C4C2966A25FE0EF1004A624C /* Planetary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planetary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C2966D25FE0EF1004A624C /* PlanetaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryApp.swift; sourceTree = "<group>"; };
+		C4C2966F25FE0EF1004A624C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4C2967125FE0EF2004A624C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4C2967425FE0EF2004A624C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4C2967625FE0EF2004A624C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C2968125FE0F02004A624C /* PlanetaryWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PlanetaryWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C2968325FE0F02004A624C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C4C2968525FE0F02004A624C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C4C2968825FE0F02004A624C /* PlanetaryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryWidget.swift; sourceTree = "<group>"; };
+		C4C2968A25FE0F02004A624C /* PlanetaryWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = PlanetaryWidget.intentdefinition; sourceTree = "<group>"; };
+		C4C2968B25FE0F03004A624C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4C2968D25FE0F03004A624C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C2969925FE0F6A004A624C /* PlanetaryWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryWidgetProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4C2966725FE0EF1004A624C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C2967E25FE0F02004A624C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C2968625FE0F02004A624C /* SwiftUI.framework in Frameworks */,
+				C4C2968425FE0F02004A624C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4C2966125FE0EF1004A624C = {
+			isa = PBXGroup;
+			children = (
+				C4C2966C25FE0EF1004A624C /* Planetary */,
+				C4C2968725FE0F02004A624C /* PlanetaryWidget */,
+				C4C2968225FE0F02004A624C /* Frameworks */,
+				C4C2966B25FE0EF1004A624C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4C2966B25FE0EF1004A624C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2966A25FE0EF1004A624C /* Planetary.app */,
+				C4C2968125FE0F02004A624C /* PlanetaryWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4C2966C25FE0EF1004A624C /* Planetary */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2966D25FE0EF1004A624C /* PlanetaryApp.swift */,
+				C4C2966F25FE0EF1004A624C /* ContentView.swift */,
+				C4C2967125FE0EF2004A624C /* Assets.xcassets */,
+				C4C2967625FE0EF2004A624C /* Info.plist */,
+				C4C2967325FE0EF2004A624C /* Preview Content */,
+			);
+			path = Planetary;
+			sourceTree = "<group>";
+		};
+		C4C2967325FE0EF2004A624C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2967425FE0EF2004A624C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4C2968225FE0F02004A624C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2968325FE0F02004A624C /* WidgetKit.framework */,
+				C4C2968525FE0F02004A624C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4C2968725FE0F02004A624C /* PlanetaryWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C4C2968825FE0F02004A624C /* PlanetaryWidget.swift */,
+				C4C2969925FE0F6A004A624C /* PlanetaryWidgetProvider.swift */,
+				C4C2968A25FE0F02004A624C /* PlanetaryWidget.intentdefinition */,
+				C4C2968B25FE0F03004A624C /* Assets.xcassets */,
+				C4C2968D25FE0F03004A624C /* Info.plist */,
+			);
+			path = PlanetaryWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4C2966925FE0EF1004A624C /* Planetary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C2967925FE0EF2004A624C /* Build configuration list for PBXNativeTarget "Planetary" */;
+			buildPhases = (
+				C4C2966625FE0EF1004A624C /* Sources */,
+				C4C2966725FE0EF1004A624C /* Frameworks */,
+				C4C2966825FE0EF1004A624C /* Resources */,
+				C4C2969625FE0F03004A624C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4C2969125FE0F03004A624C /* PBXTargetDependency */,
+			);
+			name = Planetary;
+			productName = Planetary;
+			productReference = C4C2966A25FE0EF1004A624C /* Planetary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4C2968025FE0F02004A624C /* PlanetaryWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C2969325FE0F03004A624C /* Build configuration list for PBXNativeTarget "PlanetaryWidgetExtension" */;
+			buildPhases = (
+				C4C2967D25FE0F02004A624C /* Sources */,
+				C4C2967E25FE0F02004A624C /* Frameworks */,
+				C4C2967F25FE0F02004A624C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanetaryWidgetExtension;
+			productName = PlanetaryWidgetExtension;
+			productReference = C4C2968125FE0F02004A624C /* PlanetaryWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4C2966225FE0EF1004A624C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C4C2966925FE0EF1004A624C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					C4C2968025FE0F02004A624C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = C4C2966525FE0EF1004A624C /* Build configuration list for PBXProject "Planetary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4C2966125FE0EF1004A624C;
+			productRefGroup = C4C2966B25FE0EF1004A624C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4C2966925FE0EF1004A624C /* Planetary */,
+				C4C2968025FE0F02004A624C /* PlanetaryWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4C2966825FE0EF1004A624C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C2967525FE0EF2004A624C /* Preview Assets.xcassets in Resources */,
+				C4C2967225FE0EF2004A624C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C2967F25FE0F02004A624C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C2968C25FE0F03004A624C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4C2966625FE0EF1004A624C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C2967025FE0EF1004A624C /* ContentView.swift in Sources */,
+				C4C2968F25FE0F03004A624C /* PlanetaryWidget.intentdefinition in Sources */,
+				C4C2966E25FE0EF1004A624C /* PlanetaryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C2967D25FE0F02004A624C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C2969A25FE0F6A004A624C /* PlanetaryWidgetProvider.swift in Sources */,
+				C4C2968E25FE0F03004A624C /* PlanetaryWidget.intentdefinition in Sources */,
+				C4C2968925FE0F02004A624C /* PlanetaryWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4C2969125FE0F03004A624C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4C2968025FE0F02004A624C /* PlanetaryWidgetExtension */;
+			targetProxy = C4C2969025FE0F03004A624C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4C2967725FE0EF2004A624C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4C2967825FE0EF2004A624C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4C2967A25FE0EF2004A624C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Planetary/Preview Content\"";
+				DEVELOPMENT_TEAM = 3WN2HPYHZR;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Planetary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = interactivedreams.Planetary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4C2967B25FE0EF2004A624C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Planetary/Preview Content\"";
+				DEVELOPMENT_TEAM = 3WN2HPYHZR;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Planetary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = interactivedreams.Planetary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4C2969425FE0F03004A624C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WN2HPYHZR;
+				INFOPLIST_FILE = PlanetaryWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = interactivedreams.Planetary.PlanetaryWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4C2969525FE0F03004A624C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WN2HPYHZR;
+				INFOPLIST_FILE = PlanetaryWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = interactivedreams.Planetary.PlanetaryWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4C2966525FE0EF1004A624C /* Build configuration list for PBXProject "Planetary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C2967725FE0EF2004A624C /* Debug */,
+				C4C2967825FE0EF2004A624C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C2967925FE0EF2004A624C /* Build configuration list for PBXNativeTarget "Planetary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C2967A25FE0EF2004A624C /* Debug */,
+				C4C2967B25FE0EF2004A624C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C2969325FE0F03004A624C /* Build configuration list for PBXNativeTarget "PlanetaryWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C2969425FE0F03004A624C /* Debug */,
+				C4C2969525FE0F03004A624C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4C2966225FE0EF1004A624C /* Project object */;
+}
