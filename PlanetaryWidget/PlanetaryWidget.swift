@@ -11,11 +11,11 @@ import Intents
 
 struct PlanetaryTimelineProvider: IntentTimelineProvider {
     func placeholder(in context: Context) -> PlanetaryTimelineEntry {
-        PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Placeholder")!, text: "Sample Text", explanation: "Expanation Sample Text", shouldShowText: true)
+        PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Placeholder")!, text: "Saturn", explanation: "Expanation Sample Text", shouldShowText: true)
     }
     
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (PlanetaryTimelineEntry) -> ()) {
-        let entry = PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Placeholder")!, text: "Sample Text", explanation: "Expanation Sample Text", shouldShowText: configuration.shouldShowText as? Bool ?? false)
+        let entry = PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Placeholder")!, text: "Saturn", explanation: "Expanation Sample Text", shouldShowText: configuration.shouldShowText as? Bool ?? false)
         completion(entry)
     }
     
@@ -180,23 +180,23 @@ struct PlanetaryWidget: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: PlanetaryTimelineProvider()) { entry in
             PlanetaryWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("A Random Astronomy Image")
-        .description("This Widget will impress every time you see it with random astronomy images, it also lets you read whats behind the image")
+        .configurationDisplayName("Random Astronomy Captions")
+        .description("This Widget will catch your eye! Learn Astronomy from this amazing Captions provided by Nasa")
     }
 }
 
 struct PlanetaryWidget_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetaryWidgetEntryView(entry: PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Test")!, text: "Sample Text", explanation: "Expanation Sample Text"))
+        PlanetaryWidgetEntryView(entry: PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "preview_image")!, text: "Saturn", explanation: "Expanation Sample Text"))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
         
-        PlanetaryWidgetEntryView(entry: PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Test")!, text: "Sample Text", explanation: "Expanation Sample Text"))
+        PlanetaryWidgetEntryView(entry: PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "preview_image")!, text: "Saturn", explanation: "Expanation Sample Text"))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
         
-        PlanetaryWidgetEntryView(entry: PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Test")!, text: "Sample Text", explanation: "Expanation Sample Text"))
+        PlanetaryWidgetEntryView(entry: PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "preview_image")!, text: "Saturn", explanation: "Expanation Sample Text"))
             .previewContext(WidgetPreviewContext(family: .systemLarge))
         
-        PlanetaryWidgetEntryView(entry: PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Test")!, text: "Sample Text", explanation: "Expanation Sample Text"))
+        PlanetaryWidgetEntryView(entry: PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "preview_image")!, text: "Saturn", explanation: "Expanation Sample Text"))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
             .redacted(reason: .placeholder)
         
