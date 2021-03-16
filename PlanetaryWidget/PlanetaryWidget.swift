@@ -9,14 +9,16 @@ import WidgetKit
 import SwiftUI
 import Intents
 
+private var planetaryTimelineEntry = PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Placeholder")!, text: "Saturn", explanation: "Expanation Sample Text", shouldShowText: true)
+
 struct PlanetaryTimelineProvider: IntentTimelineProvider {
     func placeholder(in context: Context) -> PlanetaryTimelineEntry {
         PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Placeholder")!, text: "Saturn", explanation: "Expanation Sample Text", shouldShowText: true)
     }
     
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (PlanetaryTimelineEntry) -> ()) {
-        let entry = PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Placeholder")!, text: "Saturn", explanation: "Expanation Sample Text", shouldShowText: configuration.shouldShowText as? Bool ?? false)
-        completion(entry)
+//        let entry = PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Placeholder")!, text: "Saturn", explanation: "Expanation Sample Text", shouldShowText: configuration.shouldShowText as? Bool ?? false)
+        completion(planetaryTimelineEntry)
     }
     
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
@@ -33,11 +35,15 @@ struct PlanetaryTimelineProvider: IntentTimelineProvider {
             case .Success(let image, let title, let explanation):
                 entry = PlanetaryTimelineEntry(date: Date(), image: image, text: title, explanation: explanation, shouldShowText: configuration.shouldShowText as? Bool ?? false)
                 
-                let timeToReload = Calendar.current.date(byAdding: .minute, value: 5, to: Date())!
-                policy = .after(timeToReload)
+                let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
+//                let timeToReload = Calendar.current.date(bySettingHour: configuration.LoadAt?.hour ?? 0,
+//                                                         minute: configuration.LoadAt?.minute ?? 0,
+//                                                         second: configuration.LoadAt?.second ?? 0,
+//                                                         of: tomorrow)!
+                policy = .after(tomorrow)
                 break
             }
-            
+            planetaryTimelineEntry = entry
             entries.append(entry)
             let timeline = Timeline(entries: entries, policy: policy)
             completion(timeline)
