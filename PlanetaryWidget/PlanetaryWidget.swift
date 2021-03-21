@@ -17,7 +17,6 @@ struct PlanetaryTimelineProvider: IntentTimelineProvider {
     }
     
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (PlanetaryTimelineEntry) -> ()) {
-//        let entry = PlanetaryTimelineEntry(date: Date(), image: UIImage(named: "Placeholder")!, text: "Saturn", explanation: "Expanation Sample Text", shouldShowText: configuration.shouldShowText as? Bool ?? false)
         completion(planetaryTimelineEntry)
     }
     
@@ -34,13 +33,13 @@ struct PlanetaryTimelineProvider: IntentTimelineProvider {
                 break
             case .Success(let image, let title, let explanation):
                 entry = PlanetaryTimelineEntry(date: Date(), image: image, text: title, explanation: explanation, shouldShowText: configuration.shouldShowText as? Bool ?? false)
-                
+            
                 let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
-//                let timeToReload = Calendar.current.date(bySettingHour: configuration.LoadAt?.hour ?? 0,
-//                                                         minute: configuration.LoadAt?.minute ?? 0,
-//                                                         second: configuration.LoadAt?.second ?? 0,
-//                                                         of: tomorrow)!
-                policy = .after(tomorrow)
+                let timeToReload = Calendar.current.date(bySettingHour: configuration.LoadAt?.hour ?? 0,
+                                                         minute: configuration.LoadAt?.minute ?? 0,
+                                                         second: configuration.LoadAt?.second ?? 0,
+                                                         of: tomorrow)!
+                policy = .after(timeToReload)
                 break
             }
             planetaryTimelineEntry = entry

@@ -26,7 +26,7 @@
 			<key>INIntentIneligibleForSuggestions</key>
 			<true/>
 			<key>INIntentLastParameterTag</key>
-			<integer>2</integer>
+			<integer>6</integer>
 			<key>INIntentName</key>
 			<string>Configuration</string>
 			<key>INIntentParameters</key>
@@ -42,16 +42,14 @@
 					<integer>1</integer>
 					<key>INIntentParameterMetadata</key>
 					<dict>
-						<key>INIntentParameterMetadataDefaultValue</key>
-						<true/>
 						<key>INIntentParameterMetadataFalseDisplayName</key>
 						<string>false</string>
 						<key>INIntentParameterMetadataFalseDisplayNameID</key>
-						<string>6LbqPx</string>
+						<string>V4AJwI</string>
 						<key>INIntentParameterMetadataTrueDisplayName</key>
 						<string>true</string>
 						<key>INIntentParameterMetadataTrueDisplayNameID</key>
-						<string>7oKFjJ</string>
+						<string>17Z4SY</string>
 					</dict>
 					<key>INIntentParameterName</key>
 					<string>shouldShowText</string>
@@ -74,12 +72,54 @@
 							<string>Primary</string>
 						</dict>
 					</array>
-					<key>INIntentParameterSupportsResolution</key>
-					<true/>
 					<key>INIntentParameterTag</key>
-					<integer>2</integer>
+					<integer>5</integer>
 					<key>INIntentParameterType</key>
 					<string>Boolean</string>
+				</dict>
+				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Load At</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>jCmzmA</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>2</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataDateStyle</key>
+						<string>Full</string>
+						<key>INIntentParameterMetadataFormat</key>
+						<string>Style</string>
+						<key>INIntentParameterMetadataTemplateID</key>
+						<string>CeI4pX</string>
+						<key>INIntentParameterMetadataTimeStyle</key>
+						<string>Full</string>
+						<key>INIntentParameterMetadataType</key>
+						<string>Time</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>LoadAt</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Configuration</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+					</array>
+					<key>INIntentParameterTag</key>
+					<integer>6</integer>
+					<key>INIntentParameterType</key>
+					<string>DateComponents</string>
 				</dict>
 			</array>
 			<key>INIntentResponse</key>
